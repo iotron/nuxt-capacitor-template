@@ -1,0 +1,30 @@
+{
+  "name": "nuxt-capacitor-template",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "ionic:build": "npm run generate",
+    "ionic:serve": "npm run dev"
+  },
+  "dependencies": {
+    "nuxt": "^3.17.0",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/cli": "^6.2.0",
+    "@capacitor/core": "^6.2.0",
+    "@capacitor/ios": "^6.2.0",
+    "@capacitor/share": "^6.0.0",
+    "@nuxtjs/tailwindcss": "^6.12.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.0"
+  }
+}

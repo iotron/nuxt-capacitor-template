@@ -1,0 +1,8 @@
+{
+  "appId": "com.example.nuxtcapacitor",
+  "appName": "nuxt-capacitor-template",
+  "webDir": ".output/public",
+  "server": {
+    "androidScheme": "https"
+  }
+}
