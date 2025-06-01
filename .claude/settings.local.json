@@ -5,7 +5,11 @@
       "Bash(npm run generate:*)",
       "Bash(npx cap add:*)",
       "Bash(npx cap sync:*)",
-      "Bash(npm run dev:*)"
+      "Bash(npm run dev:*)",
+      "Bash(java:*)",
+      "Bash(./gradlew:*)",
+      "Bash(npx cap open:*)",
+      "Bash(open:*)"
     ],
     "deny": []
   }
