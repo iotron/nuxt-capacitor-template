@@ -4,7 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Nuxt 3 + Capacitor template for building cross-platform mobile applications (iOS/Android) from a single Vue.js codebase. The project uses Tailwind CSS for styling and is configured with TypeScript support.
+This is a pure Nuxt 3 + Capacitor template for building cross-platform mobile applications (iOS/Android) from a single Vue.js codebase. The project uses Tailwind CSS for styling and is configured with TypeScript support.
+
+**Note**: This is a pure Capacitor implementation without any Ionic Framework dependencies. The project uses Capacitor's native bridge directly without Ionic UI components or CLI tools.
 
 ## Essential Commands
 
@@ -58,6 +60,8 @@ For development with live reload on mobile devices:
 - **SSR is disabled** in `nuxt.config.ts` - Required for mobile apps
 - **Output directory** is `.output/public` - Must match `capacitor.config.json`
 - **App ID**: `com.example.nuxtcapacitor` - Change for production
+- **Web Dir**: `.output/public` in `capacitor.config.json` - Correct for Nuxt 3 static generation
+- **No Ionic Config**: This template uses pure Capacitor without Ionic Framework
 
 ### Native Plugin Integration
 Example using Capacitor plugins:
@@ -88,3 +92,17 @@ Always run `npx cap sync` after installing new Capacitor plugins.
 - Check Android Gradle version (8.11.1) compatibility when updating
 - iOS requires Xcode for building and deployment
 - Use platform-specific folders in native projects for custom native code
+- This is a pure Capacitor setup - no Ionic Framework dependencies
+- Styling is done with Tailwind CSS, not Ionic components
+
+## Template vs Blog Post Differences
+
+This template implementation differs from the capgo.app blog post in several ways:
+
+1. **Correct output directory**: Uses `.output/public` instead of `dist`
+2. **No Ionic dependencies**: Pure Capacitor without Ionic CLI or Framework
+3. **SSR explicitly disabled**: Required for mobile apps
+4. **Updated dependencies**: Latest versions of Nuxt 3, Capacitor 6, etc.
+5. **TypeScript ready**: Includes proper TypeScript configuration
+
+The blog suggests using Konsta UI for mobile styling, but this template uses plain Tailwind CSS, giving you more flexibility to choose your own UI framework or build custom components.
