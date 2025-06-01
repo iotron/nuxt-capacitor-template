@@ -89,6 +89,8 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
+.nitro
+.output
 dist
 
 # Gatsby files
@@ -128,3 +130,37 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Capacitor
+ios/App/build
+ios/App/Pods
+ios/App/public
+ios/App/App/public
+ios/capacitor-cordova-ios-plugins
+android/app/build
+android/build
+android/.gradle
+android/app/src/main/assets/public
+android/capacitor-cordova-android-plugins
+
+# IDE
+.idea
+.vscode
+*.iml
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
