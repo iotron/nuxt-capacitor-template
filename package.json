@@ -7,9 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "ionic:build": "npm run generate",
-    "ionic:serve": "npm run dev"
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "nuxt": "^3.17.0",
